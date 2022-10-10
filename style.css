@@ -1,0 +1,181 @@
+html{
+    font-family: 
+    system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+body{
+    margin: 0%;
+    background: linear-gradient(130deg, rgba(0,12,36,1) 3%, rgba(1,57,95,1) 54%, rgba(0,212,255,1) 100%);
+    box-sizing: border-box;
+}
+
+#calculator{
+    transition: box-shadow 1s ease;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    margin: 5% auto;
+    width: 23em;
+    height: 33em;
+    border: solid 0.5em #35424A;
+    border-radius: 0.3em;
+    background-color: #648395;
+    display: grid;
+    grid-template-columns: 10px 15px 10px repeat(4, auto) 10px 15px 10px;
+    grid-template-rows: 10px 15px 10px 70px 10px 10px repeat(5, auto) 10px 15px 10px 10px;
+}
+
+#calculator:hover{
+    box-shadow: 0px 15px 34px rgba(0, 0, 0, 0.3);
+}
+
+#calculator-pantalla{
+    border: solid gray;
+    padding: 1em;
+    grid-column: 3/9;
+    grid-row: 3/5;
+    border-radius: 0.3em;
+    background-color: white;
+}
+
+#calculator-pantalla-text{
+    color: gray;
+    display: flex;
+    justify-content: end;
+    margin: 0%;
+    font-size: 3em;
+}
+
+#fondito{
+    grid-column: 3/9;
+    grid-row: 6/13;
+    background-color: #2c4251;
+}
+
+.boton{
+    transition: background-color 1s;
+    cursor: pointer;
+    background-color: gray;
+    text-align: center;
+    border-radius: 0.3em;
+    margin: 1px;
+    padding-top: 35%;
+}
+
+.boton:hover{
+    background-color: rgb(161, 161, 161);
+}
+
+#boton-sumar{
+    grid-column: 7;
+    grid-row: 10;
+}
+
+#boton-restar{
+    grid-column: 7;
+    grid-row: 9;
+}
+
+#boton-dividir{
+    grid-column: 7;
+    grid-row: 8;
+}
+
+#boton-multiplicar{
+    grid-column: 7;
+    grid-row: 7;
+}
+
+#boton-cero{
+    grid-column: 4;
+    grid-row: 11;
+}
+
+#boton-uno{
+    grid-column: 4;
+    grid-row: 10;
+}
+
+#boton-dos{
+    grid-column: 5;
+    grid-row: 10;
+}
+
+#boton-tres{
+    grid-column: 6;
+    grid-row: 10;
+}
+
+#boton-cuatro{
+    grid-column: 4;
+    grid-row: 9;
+}
+
+#boton-cinco{
+    grid-column: 5;
+    grid-row: 9;
+}
+
+#boton-seis{
+    grid-column: 6;
+    grid-row: 9;
+}
+
+#boton-siete{
+    grid-column: 4;
+    grid-row: 8;
+}
+
+#boton-ocho{
+    grid-column: 5;
+    grid-row: 8;
+}
+
+#boton-nueve{
+    grid-column: 6;
+    grid-row: 8;
+}
+
+#boton-punto{
+    grid-column: 5;
+    grid-row: 11;
+}
+
+#boton-parentesis-1{
+    grid-column: 5;
+    grid-row: 7;
+}
+
+#boton-parentesis-2{
+    grid-column: 6;
+    grid-row: 7;
+}
+
+#boton-porcentaje{
+    grid-column: 6;
+    grid-row: 11;
+}
+
+#boton-borrar{
+    grid-column: 4;
+    grid-row: 7;
+    transition: background-color 1s ease;
+    background-color: rgb(255, 0, 0);
+}
+
+#boton-borrar:hover{
+    background-color: rgb(255, 116, 116);
+}
+
+#boton-resultado{
+    grid-column: 7;
+    grid-row: 11;
+    transition: background-color 1s ease;
+    background-color: rgb(0, 255, 0);
+}
+
+#boton-resultado:hover{
+    background-color: #c0ff5a;
+}
+
